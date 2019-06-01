@@ -1,0 +1,27 @@
+{
+  "name": "my-profile-api",
+  "version": "1.0.0",
+  "description": "backend for resume app",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rishi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.0",
+    "helmet": "^3.18.0",
+    "http-errors": "^1.7.2",
+    "joi": "^14.3.1",
+    "mongoose": "^5.5.9",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.0",
+    "swagger-ui-express": "^4.0.3"
+  }
+}

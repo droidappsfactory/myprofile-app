@@ -1,0 +1,14 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "My Profile API",
+      "description": "Documentation of API in my profile",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:1920",
+    "basePath": "/api/"
+}
