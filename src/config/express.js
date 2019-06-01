@@ -31,6 +31,8 @@ if (config.env !== "development") {
   app.use(logger("tiny"));
 }
 
+app.use('/static', express.static(path.join(__dirname, '../../public')));
+
 var distDir = "../../dist/";
 
 app.use(express.static(path.join(__dirname, distDir)));
