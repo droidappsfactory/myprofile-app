@@ -6,7 +6,7 @@ const envVarsSchema = Joi.object({
   NODE_ENV: Joi.string()
     .allow(["development", "production", "test", "provision"])
     .default("development"),
-  SERVER_PORT: Joi.number().default(1920),
+  PORT: Joi.number().default(1920),
   MONGO_HOST: Joi.string().description("Mongo DB host url"),
   MONGO_PORT: Joi.number().default(27017),
   MONGOOSE_DEBUG: Joi.boolean().when("NODE_ENV", {
@@ -27,7 +27,7 @@ if (error) {
 
 const config = {
     env: envVars.NODE_ENV,
-    port: envVars.SERVER_PORT,
+    port: envVars.PORT,
     mongooseDebug: envVars.MONGOOSE_DEBUG,
     frontend: envVars.MEAN_FRONTEND || 'angular',
     mongo: {
