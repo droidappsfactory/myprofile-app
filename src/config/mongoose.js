@@ -4,7 +4,7 @@ const debug = require("debug")("express-mongoose-es6-rest-api:index");
 
 const config = require("./config");
 
-const mongoUri = config.mongo.host;
+const mongoUri = 'mongodb://heroku_60bp6lsz:l8kkotopl2l12notqmvapifg5l@ds231207.mlab.com:31207/heroku_60bp6lsz' || 'mongodb://localhost/rotten-potatoes';
 mongoose
   .connect(mongoUri, { useNewUrlParser: true })
   .then(() => {
