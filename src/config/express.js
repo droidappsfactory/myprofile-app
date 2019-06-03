@@ -15,8 +15,6 @@ const routes = require('../routes/index.route');
 
 const app = express();
 
-console.log(__dirname);
-
 if (config.env !== "development") {
   var accessLogStream = fs.createWriteStream(
     path.join(config.logsFolder, "access.log"),
